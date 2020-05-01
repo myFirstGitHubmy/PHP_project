@@ -1,2 +1,2 @@
-# PHP_project
+# phpProject
 php
