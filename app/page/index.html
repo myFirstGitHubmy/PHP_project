@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Cycle</title>
+</head>
+<body style="margin-left: 50px">
+<form action="../main.php" method="post">
+    <label><b>1 задание:На какое число необходимо умножить?</b></label>
+<!--    <input type="text" name="numb" maxlength="3" minlength="1">-->
+<!--    <button type="submit">Create loops</button><br>-->
+    <div class="input-group mb-3" style="width: 600px;">
+        <div class="input-group-prepend">
+            <button class="btn btn-outline-secondary" type="submit">Send request</button>
+        </div>
+        <input type="text" class="form-control" placeholder="" style="width: 400px;" name="numb" maxlength="3" minlength="1">
+    </div>
+</form>
+    <label><b>2 задание: массив фильмов    </b><a href="../secondTask.php">Перейти</a></label><br>
+
+
+    <label><b> 3 задание: Вывести все счастливые билеты из отрезка [M, N], где M и N — шестизначные числа.</b></label>
+    <form action="../thirdTask.php" method="post" name="form" onsubmit="return false">
+        <div class="input-group" style="width: 500px;">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Number M and N</span>
+            </div>
+            <input type="text" class="form-control" id="numb_M" name="numb_M" maxlength="6" minlength="6" required>
+            <input type="text"class="form-control"  id="numb_N" name="numb_N" maxlength="6" minlength="6" required>
+        </div>
+        <span id="prov" style="color: red" hidden></span><br>
+        <input name="send" id="send" value="Send" style="margin-top: 20px" class="btn btn-warning" type="submit" onclick="prov(this.form)">
+    </form>
+
+<script language="JavaScript">
+
+    function prov(form) {
+        try {
+            let numb_m = parseInt(form.numb_M.value);
+            let numb_n = parseInt(form.numb_N.value);
+
+             if (numb_m < numb_n) {
+                document.getElementById('prov').hidden = true;
+                form.submit();
+                console.log(numb_n + " " + numb_m)
+            } else if(numb_m > numb_n){
+                 document.getElementById('prov').innerHTML =  "Число М должно быть больше, чем N";
+                document.getElementById('prov').hidden = false;
+                console.log(numb_n + " " + numb_m)
+            }else if (numb_m == numb_n){
+                 document.getElementById('prov').innerHTML =  "Числа M и N равны(M>N)";
+                 document.getElementById('prov').hidden = false;
+             }
+        }catch (err) {
+            console.log(err.print());
+        }
+    }
+</script>
+</body>
+</html>
