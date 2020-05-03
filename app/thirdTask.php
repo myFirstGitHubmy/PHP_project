@@ -64,7 +64,7 @@ $numb_M = $_POST['numb_M'];
 $numb_N = $_POST['numb_N'];
 //$numb_M = 600000;
 //$numb_N = 800000;
-echo "<h2>Вести все счастливые билеты из отрезка [M, N], где M и N — шестизначные числа. M = $numb_M , N = $numb_N</h2>";
+echo "<h2>Вести все счастливые билеты из отрезка [M, N], где M и N — шестизначные числа. M = $numb_M , N = $numb_N (сумма первых 3х цифр равна сумме последних 3-х цифр)</h2>";
 $l = 0;
 //echo "<br>1: $numb_M 2: $numb_N";
 echo '<div style="overflow: auto; width: 300px; height: 400px; border-radius: 10px; background-color: #e8f5b5; margin-left: 100px">';

@@ -43,18 +43,27 @@
             let numb_m = parseInt(form.numb_M.value);
             let numb_n = parseInt(form.numb_N.value);
 
-             if (numb_m < numb_n) {
+            let numb_m_length =(document.getElementById('numb_M').value).length;
+            let numb_n_length =(document.getElementById('numb_N').value).length;
+
+            if (numb_m_length > 5 & numb_n_length > 5) {
                 document.getElementById('prov').hidden = true;
-                form.submit();
-                console.log(numb_n + " " + numb_m)
-            } else if(numb_m > numb_n){
-                 document.getElementById('prov').innerHTML =  "Число М должно быть больше, чем N";
+                if (numb_m < numb_n) {
+                    document.getElementById('prov').hidden = true;
+                    form.submit();
+                    console.log(numb_n + " " + numb_m)
+                } else if (numb_m > numb_n) {
+                    document.getElementById('prov').innerHTML = "Число М должно быть больше, чем N";
+                    document.getElementById('prov').hidden = false;
+                    console.log(numb_n + " " + numb_m)
+                } else if (numb_m == numb_n) {
+                    document.getElementById('prov').innerHTML = "Числа M и N равны(M>N)";
+                    document.getElementById('prov').hidden = false;
+                }
+            }else {
+                document.getElementById('prov').innerHTML = "Длина числа должна быть 6 символов";
                 document.getElementById('prov').hidden = false;
-                console.log(numb_n + " " + numb_m)
-            }else if (numb_m == numb_n){
-                 document.getElementById('prov').innerHTML =  "Числа M и N равны(M>N)";
-                 document.getElementById('prov').hidden = false;
-             }
+            }
         }catch (err) {
             console.log(err.print());
         }

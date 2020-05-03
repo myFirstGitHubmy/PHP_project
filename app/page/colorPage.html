@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Color</title>
+    <link rel="stylesheet" type="text/css" href="../style/styleColorPage.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="../js/color.js"></script>
+</head>
+<body>
+<form action="../fourTask.php" method="post" class="form_width">
+    <div class="input-group mb-3">
+        <div class='form-group input-group mb-3'>
+            <label style="color:red;">Red</label>
+            <div  class='form-group input-group mb-3'>
+                <input type="range" name="colorRed" class="custom-range form-control " value='0' max="255" min="0" id="customRangeRed" oninput="show_RGB('customRangeRed','customSpanRed')">
+                <span class='input-group-text' id="customSpanRed">0</span>
+            </div>
+        </div>
+        <div class='form-group input-group mb-3'>
+            <label style="color:green;">Green</label>
+            <div class='form-group input-group mb-3'>
+                <input type="range" name="colorGreen" class="custom-range form-control " value='0' max="255" min="0" id="customRangeGreen" oninput="show_RGB('customRangeGreen','customSpanGreen')">
+                <span class='input-group-text' id="customSpanGreen">0</span>
+            </div>
+        </div>
+        <div class='form-group input-group mb-3'>
+            <label style="color:blue;">Blue</label>
+            <div class='form-group input-group mb-3'>
+                <input type="range" name="colorBlue" class="custom-range form-control " value='0' max="255" min="0" id="customRangeBlue" oninput="show_RGB('customRangeBlue','customSpanBlue')">
+                <span class='input-group-text' id="customSpanBlue">0</span>
+            </div>
+        </div>
+        <div class='form-group input-group mb-3'>
+            <label>Size</label>
+            <div class='form-group input-group mb-3'>
+                <input type="range" name="size" class="custom-range form-control " value="30" max="72" min="0" id="customRangeSize" oninput="show_RGB('customRangeSize','customSpanSize')">
+                <span class='input-group-text' id="customSpanSize">30</span>
+            </div>
+        </div>
+        <button class="btn btn-success" type="submit">Show your color</button>
+    </div>
+</form>
+
+<div class="selectedColor">
+    <select id="sel" class="custom-select " size="4" onclick="colorSelected()">
+        <option selected value="Yellow">Yellow</option>
+        <option value="Tomato">Tomato</option>
+        <option value="YellowGreen">YellowGreen</option>
+        <option value="DeepPink">DeepPink</option>
+        <option value="Aquamarine">Aquamarine</option>
+        <option value="Chocolate">Chocolate</option>
+        <option value="Purple">Purple</option>
+        <option value="SlateBlue">SlateBlue</option>
+        <option value="OrangeRed">OrangeRed</option>
+        <option value="Violet">Violet</option>
+        <option value="Moccasin">Moccasin</option>
+    </select>
+</div>
+
+
+
+
+</body>
+</html>
