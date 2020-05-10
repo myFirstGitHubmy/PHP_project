@@ -11,7 +11,7 @@ $size = $_POST['size'];
 echo "<div style='text-align: center; color: rgb($colorRed,$colorGreen,$colorBlue); font-size: $size'> Hello World!!!!</div>";
 
 
-echo "<button class='btn btn-primary link-back-page'><a style='color: black' href='page/colorPage.html'>Вернуться обратно</a></button>";
+echo "<button class='btn btn-primary link-back-page'><a style='color: black' href='../page/colorPage.html'>Вернуться обратно</a></button>";
 
 
 
