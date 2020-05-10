@@ -6,10 +6,12 @@ echo "<link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstr
 
 $lname = $_POST['input-lastname'];
 $fname = $_POST['input-firstname'];
+$fileName = $_POST['input-pathFile'];
 
 echo "<h2>Фамилия: ".$lname."</h2>";
 echo "<h2>Имя: ".$fname."</h2>";
-$fileName = "e:/test.txt";
+echo "<h2>Путь: ".$fileName."</h2>";
+
 
 $file = fopen($fileName,"w");
 fputs($file, $lname.PHP_EOL);
