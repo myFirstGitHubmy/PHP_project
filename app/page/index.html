@@ -9,7 +9,7 @@
     <title>Cycle</title>
 </head>
 <body style="margin-left: 50px">
-<form action="../tasks/main.php" method="post">
+<form action="../tasks/Main.php" method="post">
     <label><b>1 задание:На какое число необходимо умножить?</b></label>
 <!--    <input type="text" name="numb" maxlength="3" minlength="1">-->
 <!--    <button type="submit">Create loops</button><br>-->
@@ -20,7 +20,7 @@
         <input type="text" class="form-control" placeholder="" style="width: 400px;" name="numb" maxlength="3" minlength="1">
     </div>
 </form>
-    <label><b>2 задание: массив фильмов    </b><a href="../tasks/secondTask.php">Перейти</a></label><br>
+    <label><b>2 задание: массив фильмов    </b><a href="../tasks/SecondTask.php">Перейти</a></label><br>
 
 
     <label><b> 3 задание: Вывести все счастливые билеты из отрезка [M, N], где M и N — шестизначные числа.</b></label>
@@ -41,6 +41,12 @@
 
 <label><b>5 задание: Написать программу, которая читает из файла данные, записанные программой из предыдущей задачи. Эта программа должна вывести данные в браузер, а в конце вывести итоги, в том числе размер файла и количество строк.</b></label>
 <button class="btn btn-light"><a href="formRequestUser.html">Открыть</a></button>
+
+<div>
+    <label><b>6 задание: Создать массив из целых и вещественных чисел. Вывести все его элементы в поля шириной 15 символов, преобразовывая их в целые значения.</b></label>
+    <button class="btn btn-light"><a href="../tasks/StringArray.php">Открыть</a></button>
+    </form>
+</div>
 <script language="JavaScript">
 
     function prov(form) {
@@ -72,6 +78,14 @@
         }catch (err) {
             console.log(err.print());
         }
+    }
+
+    function choose() {
+        let checkBox = document.getElementById('choose').checked;
+        console.log(checkBox);
+        let chooseInput = document.getElementById('chooseInput');
+        if (checkBox) chooseInput.disabled = 0;
+        else chooseInput.disabled = 1;
     }
 </script>
 </body>
