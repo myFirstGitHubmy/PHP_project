@@ -25,3 +25,4 @@ and request query(create, delete)
 
 #tasks: file this lab. Index.html page links to these files
 
+#script.sql - database creation script
