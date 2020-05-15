@@ -10,7 +10,7 @@ if($_POST['choose']) {
 else{
     $SizeArray = rand(1,20);
 }
-
+echo "<button class='btn btn-outline-secondary'><a href='../page/index.html'>Back to page</a></button>";
 echo "<form method='post' name='str' action='StringArray.php'>";
 echo "<label>Выбрать размер массива/авто(1-20)</label><input style='margin-left: 10px' type='checkbox' name='choose' onclick='if(this.checked){this.form.chooseInput.disabled = 0}else{ this.form.chooseInput.disabled = 1;}'><br>";
 //echo "<input class='form-control' disabled type='number' name='chooseInput' id='chooseInput' value='$SizeArray'>";

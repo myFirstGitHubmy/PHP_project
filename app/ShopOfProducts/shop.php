@@ -49,7 +49,7 @@ else {
         echo "<td>$pair[shop]</td>";
         echo "<td>$pair[category]</td>";
         echo "<td>$pair[barcode]</td>";
-        echo "<td><a href='../include/query/deleteProductById.php?id=$pair[id]' >Delete</a></td>";
+        echo "<td><button class='btn btn-danger'><a style='color: black' href='../include/query/deleteProductById.php?id=$pair[id]' >Delete</a></button></td>";
         echo "</tr>";
         $i++;
     }

@@ -68,8 +68,8 @@ echo "<div class=\"input-group mb-3\">
   <input type=\"text\" class=\"form-control\" name='barcode' aria-label=\"Sizing example input\" aria-describedby=\"inputGroup-sizing-default\">
 </div>";
 
-echo "<button type='submit' class=\"btn btn-primary\" data-toggle=\"modal\" data-target=\"#exampleModal\">Save</button>";
-
+echo "<button type='submit' class=\"btn btn-primary\">Save</button>";
+echo "&nbsp;&nbsp;<button type='button' class=\"btn btn-warning\"><a href='shop.php'>Cancel</a></button>";
 echo "</form>";
 
 echo "</div>";
