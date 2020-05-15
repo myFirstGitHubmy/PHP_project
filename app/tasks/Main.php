@@ -11,7 +11,6 @@ for ($i = 1; $i <10; $i++){
     echo $outPrintPage;
 }
 echo "</br>Цикл WHILE</br>";
-
 $i = 0;
 while ($i++<10){
     $res = $i*$p;
