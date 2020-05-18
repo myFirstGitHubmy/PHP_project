@@ -47,7 +47,7 @@ echo "<div class=\"input-group mb-3\">
   <div class=\"input-group-prepend\">
     <span class=\"input-group-text\" id=\"inputGroup-sizing-default\">Средняя оценка</span>
   </div>
-  <input type=\"number\" class=\"form-control\" name='aver_ball' aria-label=\"Sizing example input\" aria-describedby=\"inputGroup-sizing-default\">
+  <input type=\"number\" class=\"form-control\" max='5' min='2' name='aver_ball' aria-label=\"Sizing example input\" aria-describedby=\"inputGroup-sizing-default\">
 </div>";
 echo "<div class=\"input-group mb-3\">
   <div class=\"input-group-prepend\">
