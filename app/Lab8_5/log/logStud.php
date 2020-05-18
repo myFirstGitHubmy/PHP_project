@@ -6,6 +6,7 @@ include_once ("../incl/db.php");
 require_once "../incl/req/all.php";
 
 $allProducts = $getStud;
+echo "<link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css\" integrity=\"sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO\" crossorigin=\"anonymous\">";
 echo "<style>
 tbody.td{
 text-align: center;
@@ -14,10 +15,10 @@ border: grey dotted 1px;
 </style>";
 echo "<div style='margin-left: 100px; margin-top: 50px; margin-right: 100px'>";
 
-echo "<button><a href='newStud.php'>Add new product</a></button>";
+echo "<button><a href='newStud.php'>Добавить ученика</a></button>";
 
-echo "<table class=\"table\" style='border: #3498db solid 1px'>";
-echo "<thead class=\"thead-light\">";
+echo "<table class=\"table table-striped table-dark\" style='border: #3498db solid 1px'>";
+echo "<thead>";
 echo "<tr>";
 echo "<td>№</td>";
 echo "<td>Фамилия</td>";
@@ -49,7 +50,7 @@ else {
         echo "<td>$pair[aver_ball]</td>";
         echo "<td>$pair[address]</td>";
         echo "<td>$pair[category]</td>";
-        echo "<td><button class='btn btn-danger'><a style='color: black' href='../incl/req/delete.php?id=$pair[id]' >Delete</a></button></td>";
+        echo "<td><button><a style='color: black' href='../incl/req/delete.php?id=$pair[id]' ><img style='width: 25px;height: 25px;' src='../cross.png' alt=''></a></button></td>";
         echo "</tr>";
         $i++;
     }

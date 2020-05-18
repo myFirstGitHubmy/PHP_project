@@ -1,7 +1,7 @@
 <?php
 
 header('Content-Type: text/html; charset=utf-8');
-
+echo "<link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css\" integrity=\"sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO\" crossorigin=\"anonymous\">";
 echo "<div style='width: 600px;margin-left: 40%;margin-top: 50px;'>";
 echo "<h2 style='text-align: center;'>Новый ученик</h2>";
 
@@ -61,9 +61,10 @@ echo "<div class=\"input-group mb-3\">
   </div>
   <input type=\"text\" class=\"form-control\" name='category' aria-label=\"Sizing example input\" aria-describedby=\"inputGroup-sizing-default\">
 </div>";
-
-echo "<button type='submit' class=\"btn btn-primary\">Save</button>";
-echo "&nbsp;&nbsp;<button type='button' class=\"btn btn-warning\"><a href='logStud.php'>Cancel</a></button>";
+echo "<div style='text-align: center'>
+            <button type='submit' class=\"btn btn-primary\">Добавить</button>
+            &nbsp;&nbsp;<button type='button' class=\"btn btn-warning\"><a href='logStud.php'>Отмена</a></button>
+</div>";
 echo "</form>";
 
 echo "</div>";
