@@ -8,5 +8,5 @@ function getAllProducts($allProd,$li)
     $allProd = mysqli_fetch_all($requestDB, MYSQLI_ASSOC);
     return $allProd;
 }
-
+var_dump();
 $getProducts = getAllProducts($allProducts, $link);
