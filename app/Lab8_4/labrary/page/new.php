@@ -69,8 +69,9 @@ echo "<div class=\"input-group mb-3\">
   <input type=\"text\" class=\"form-control\" name='description_book' aria-label=\"Sizing example input\" aria-describedby=\"inputGroup-sizing-default\">
 </div>";
 
-echo "<button type='submit' class=\"btn btn-info\">Save</button>";
-echo "&nbsp;&nbsp;<button type='button' class=\"btn btn-light\"><a href='main.php'>Cancel</a></button>";
+
+echo "&nbsp;&nbsp;<a href='main.php'><button type='button' class=\"btn btn-light\">←Отмена</button></a>";
+echo "<button type='submit' style='margin-left: 350px' class=\"btn btn-info\">Сохранить</button>";
 echo "</form>";
 
 echo "</div>";

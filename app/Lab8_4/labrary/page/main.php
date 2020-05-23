@@ -8,6 +8,7 @@ echo "<link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstr
 echo "<style>
 td{
 text-align: center;
+border: grey solid 1px;
 }
 tbody.td{
 border: grey dotted 1px;
@@ -16,9 +17,9 @@ border: grey dotted 1px;
 </style>";
 echo "<div style='margin-left: 100px; margin-top: 50px; margin-right: 100px'>";
 
-echo "<button><a href='new.php'>Добавить книгу</a></button>";
+echo "<a href='new.php'><button>Новая книга</button></a>";
 
-echo "<table class=\"table\" style='border: #3498db solid 1px'>";
+echo "<table class=\"table\" style='border: green solid 2px'>";
 echo "<thead class=\"thead-light\">";
 echo "<tr>";
 echo "<td>№</td>";
@@ -51,7 +52,7 @@ else {
         echo "<td>$pair[genre]</td>";
         echo "<td>$pair[transfer]</td>";
         echo "<td>$pair[description_book]</td>";
-        echo "<td><button class='btn btn-danger'><a style='color: black' href='../inc/query/removeBook.php?id=$pair[id]' >Удалить</a></button></td>";
+        echo "<td><a style='color: black' href='../inc/query/removeBook.php?id=$pair[id]' ><button class='btn btn-light'>Удалить</button></a></td>";
         echo "</tr>";
         $i++;
     }
