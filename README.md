@@ -3,7 +3,7 @@ New project on the programming language - PHP
 
 Каталог товаров в продовольственном магазине.
 
-Main page index.html(/app/page/)
+Main page index.html(/app/page/) Главная страница со всеми заданиями
 
 #include: connect to database (
 host:localhost
